@@ -4,7 +4,8 @@
 }
 
 body{
-    font-family: 'Inter', sans-serif;
+    /* font-family: 'Inter', sans-serif; */
+    font-family: 'Roboto', sans-serif;
     font-size: 13px;
     box-sizing: border-box;
 }
@@ -21,6 +22,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 5px 10px;
+    background-color: #ffffff56;
 }
 
 .social-media-icon{
@@ -32,22 +34,30 @@ nav{
     border: 2px solid black;
     border-radius: 50%;
     font-size: 1.4rem;
+    transition: all 0.3s ease-in-out;
+}
+.social-media-icon > div:hover{
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    cursor: pointer;
 }
 .hero{
-    min-height: 70vh;
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #0000003d;
 }
 .hero > blockquote{
-    width: 70%;
+    width: 85%;
 }
 .hero > blockquote p{
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #ffffff;
     line-height: 1.2;
-    font-weight: 600;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
     position: relative;
 }
 
@@ -84,11 +94,13 @@ nav{
 .main-text{
     display: flex;
     width: 85%;
-    margin: 20px auto;
+    margin: 50px auto;
     align-items: center;
 }
 .main-text p{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    font-family: 'Roboto' , sans-serif;
+    font-weight: 300;
 }
 .main-text > div{
     background-color: rgb(255, 255, 255);
@@ -107,6 +119,11 @@ nav{
 .recent-news-section{
     margin: 50px 0px;
 }
+
+.recent-news-mobile{
+    display: none;
+}
+
 .recent-news-section > h2{
     font-size: 4rem;
     font-weight: bold;
@@ -128,13 +145,16 @@ nav{
 }
 .recent-news > article > .content > h5{
     color: #FF6584;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    font-family: 'Roboto' , sans-serif;
     font-weight: bold;
-    padding: 23px 12px;
+    padding: 23px 5px 15px 5px;
 }
 .recent-news > article > .content > p{
     color: #000000;
-    font-size: 1rem;
+    font-size: 1.1rem;
+    font-family: 'Roboto' , sans-serif;
+    font-weight: 300;
     padding: 5px 10px;
 }
 
@@ -172,7 +192,8 @@ nav{
 .all-departments > .deparetment > h4{
     color: #7B7B7B;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.7rem;
+    font-weight: bold;
     margin-top: 12px;
 }
 .all-departments > .deparetment > h4::first-letter{
@@ -189,6 +210,7 @@ nav{
 /* news network start */
 .news-network-section{
     background-image: url('../img/news-network-bg.png');
+    background-color: rgba(0, 0, 0, 0.335);
     background-size: cover;
     background-attachment: fixed;
     margin: 50px auto;
@@ -224,9 +246,10 @@ nav{
 }
 .subscribe-form > h6{
     color: #ffffff;
-    font-size: 1.1rem;
-    line-height: 1.2;
-    font-weight: 400;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.3rem;
     margin-bottom: 20px;
 }
 .subscribe-form > form > input[type=email]{
@@ -247,9 +270,13 @@ nav{
     margin-right: 27px;
 }
 .subscribe-form > p{
-    width: 60%;
+    width: 75%;
     color: #ffffff;
     margin: 30px 0px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.1rem;
 }
 
 /* new network end */
@@ -371,10 +398,172 @@ footer{
 
 .footer-location > h6{
     color: #FF6584;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
     margin-bottom: 20px;
 }
 .footer-location > p{
     color: #FF6584;
     font-size: 1rem;
+}
+
+/* responsive part */
+
+@media screen and (max-width: 992px) {
+    /* hero section responsive */
+    .hero > blockquote p{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .social-media-icon > div{
+        font-size: 1.2rem;
+    }
+
+    .main-text p{
+        font-size: 15px;
+    }
+
+    /* recent newes section  */
+
+    .recent-news-desktop{
+        display: none;
+    }
+
+    .recent-news-mobile{
+        display: block;
+    }
+
+    .recent-news-section > h2 {
+        font-size: 2.5rem;
+    }
+
+    .recent-news {
+        grid-template-columns: repeat(1,1fr);
+        margin-top: 50px;
+        grid-row-gap: 30px;
+    }
+
+    .recent-news > article{
+        padding: 8px 15px;
+        box-shadow: -5px 8px 12px -7px rgba(0,0,0,0.49);
+    }
+
+    .recent-news > article > .content {
+        height: auto;
+    }
+    
+    .recent-news > article > .img {
+        height: auto;
+    }
+
+    /* department section  */
+
+    .depertment-section > h2{
+        font-size: 2.5rem;
+    }
+
+    .depertment-section > .all-departments {
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 49px 75px;
+        margin-top: 47px;
+    }
+
+    .all-departments > .deparetment > h4 {
+        font-size: 1.2rem;
+        margin-top: 5px;
+    }
+
+    /* news section  */
+    .news-network-section > h2{
+        font-size: 2.5rem;
+    }
+    .subscribe-form > h6 {
+        text-align: center;
+    }
+
+    .subscribe-forms {
+        margin: 20px auto;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .subscribe-form > form > input[type=email] {
+        width: 45%;
+    }
+
+    .subscribe-form > form > input[type=submit] {
+        margin-left: 7px;
+    }
+
+    .subscribe-form > p {
+        color: #ffffff;
+        margin: 21px 0px;
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .subscribe-form-left::before {
+        position: absolute;
+        height: 5px;
+        width: 100%;
+        bottom: 0;
+        right: 0;
+        content: '';
+        background-color: #FF6584;
+        margin-bottom: 5px;
+    }
+    .subscribe-form-left::after {
+        position: absolute;
+        height: 0;
+        width: 100%;
+        bottom: 0;
+        right: 0;
+        content: '';
+        background-color: #FF6584;
+        margin-bottom: 5px;
+    }
+    /* exhibition  */
+
+    .exhibition-section > h2 {
+        font-size: 2.5rem;
+    }
+
+    .exhibition-content {
+        margin-top: 24px;
+        overflow: hidden;
+    }
+    .exhibition-location{
+        display: none;
+    }
+    .exhibition-button-group{
+        display: none;
+    }
+
+    /* initiatives  */
+
+    .initiatives-section > h2 {
+        font-size: 2.5rem;
+    }
+    
+    .initiatives-images{
+        margin-top: 18px;
+    }
+
+    /* footer  */
+
+    footer {
+        padding: 45px 24px 20px 24px;
+        grid-template-columns: repeat(2,1fr);
+        grid-column-gap: 30px;
+    }
+
+    .footer-location > h6{
+        font-size: 1.1rem;
+    }
+
+    .footer-location > p {
+        font-size: 0.9rem;
+    }
 }
