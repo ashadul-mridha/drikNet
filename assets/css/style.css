@@ -26,6 +26,11 @@ nav{
     background-color: #ffffff56;
 }
 
+.logo{
+    width: 256px;
+    height: 78px;
+}
+
 .social-media-icon{
     display: flex;
 }
@@ -105,7 +110,7 @@ nav{
 }
 .main-text > div{
     background-color: rgb(255, 255, 255);
-    padding: 15px 20px;
+    padding: 15px 16px;
     border-radius: 50%;
     margin-left: 20px;
     box-shadow: -6px 5px 26px -12px rgba(0,0,0,0.75);
@@ -425,6 +430,11 @@ footer{
     .hero > blockquote p{
         font-size: 1.2rem;
         text-align: center;
+    }
+
+    .logo{
+        width: 156px;
+        height: 78px;
     }
 
     .social-media-icon > div{
