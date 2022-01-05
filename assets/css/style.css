@@ -263,7 +263,7 @@ nav{
     border: 0px;
     color: #FF6584;
     /* font-size: 25px; */
-    width: 65%;
+    width: 100%;
 }
 
 .subscribe-form > form > input[type=submit]{
@@ -538,7 +538,22 @@ footer{
         display: none;
     }
     .exhibition-button-group{
-        display: none;
+        
+        padding: 10px 10px;
+        top: 30%;
+    }
+
+    .exhibition-button-group > button:first-child {
+        padding: 7px 14px;
+        font-size: 1rem;
+        margin-right: 15px;
+        background-color: black;
+    }
+
+    .exhibition-button-group > button:last-child {
+        padding: 7px 16px;
+        font-size: 1rem;
+        margin-top: 10px;
     }
 
     /* initiatives  */
