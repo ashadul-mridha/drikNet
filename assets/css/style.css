@@ -434,6 +434,28 @@ ul.slick-dots {
 
 /* exhibition end */
 
+/* calendar start  */
+.calendar-section{
+    margin: 50px 0px;
+}
+.calendar-section > h2{
+    font-size: 4rem;
+    font-weight: 400;
+    text-align: center;
+    color: #7B7B7B;
+    font-family: 'Zeyada', cursive;
+}
+
+.calendar-section > h2::first-letter{
+    color: #FF6584;
+}
+
+.calendar-wrapper{
+    background-color: #29292B;
+    padding: 10px 20px;
+    height: 60vh;
+}
+
 /* initiatives start */
 .initiatives-section{
     margin: 50px 0px;

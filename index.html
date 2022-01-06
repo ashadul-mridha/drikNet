@@ -54,49 +54,16 @@
                 <blockquote>
                     <p>1 An insight into the evolution of one of the most significant movements in contemporary photography, through the eyes and voice of the man who shaped it. An extraordinary artist, Shahidul Alam is a photographer, writer, activist, and social entrepreneur who used his art to chronicle the social and artistic struggles in a country known largely for poverty and disasters.</p>
                 </blockquote>
-                <!-- <div class="hero-dot">
-                    <div>
-                        <i class="fas fa-circle"></i>
-                    </div>
-                    <div>
-                        <i class="fas fa-circle"></i>
-                    </div>
-                    <div>
-                        <i class="fas fa-circle"></i>
-                    </div>
-                </div> -->
             </div>
             <div class="hero">
                 <blockquote>
                     <p>2 An insight into the evolution of one of the most significant movements in contemporary photography, through the eyes and voice of the man who shaped it. An extraordinary artist, Shahidul Alam is a photographer, writer, activist, and social entrepreneur who used his art to chronicle the social and artistic struggles in a country known largely for poverty and disasters.</p>
                 </blockquote>
-                <!-- <div class="hero-dot">
-                    <div>
-                        <i class="fas fa-circle"></i>
-                    </div>
-                    <div>
-                        <i class="fas fa-circle"></i>
-                    </div>
-                    <div>
-                        <i class="fas fa-circle"></i>
-                    </div>
-                </div> -->
             </div>
             <div class="hero">
                 <blockquote>
                     <p>2 An insight into the evolution of one of the most significant movements in contemporary photography, through the eyes and voice of the man who shaped it. An extraordinary artist, Shahidul Alam is a photographer, writer, activist, and social entrepreneur who used his art to chronicle the social and artistic struggles in a country known largely for poverty and disasters.</p>
                 </blockquote>
-                <!-- <div class="hero-dot">
-                    <div>
-                        <i class="fas fa-circle"></i>
-                    </div>
-                    <div>
-                        <i class="fas fa-circle"></i>
-                    </div>
-                    <div>
-                        <i class="fas fa-circle"></i>
-                    </div>
-                </div> -->
             </div>
         </div>
         
@@ -299,6 +266,35 @@
                 </div>
             </div>
         </section>
+        <!-- calendar section  -->
+
+        <section class="calendar-section">
+            <h2>Calendar</h2>
+            <div class="calendar-wrapper">
+                <div id="flipbook" class="current-calendar">
+                    <div>
+                        <img src="./assets/img/c1.jpg" width="100%" alt="">
+                    </div>
+                    <div>
+                        <img src="./assets/img/c2.jpg" width="100%" alt="">
+                    </div>
+                    <div>
+                        <img src="./assets/img/c3.jpg" width="100%" alt="">
+                    </div>
+                    <div>
+                        <img src="./assets/img/c4.jpg" width="100%" alt="">
+                    </div>
+                    <div>
+                        <img src="./assets/img/c5.jpg" width="100%" alt="">
+                    </div>
+                    <div>
+                        <img src="./assets/img/c6.jpg" width="100%" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
         <section class="initiatives-section">
             <h2>Initiatives</h2>
             <div class="initiatives-images">
@@ -362,6 +358,8 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- turnjs -->
+    <script src="./assets/js/turn.js"></script>
 
     <!-- slick slider  -->
     <script type="text/javascript">
@@ -409,6 +407,13 @@
             });
 
         });
-      </script>
+    </script>
+
+    <!-- flip calendar  -->
+    <script type="text/javascript">
+        $("#flipbook").turn({
+            autoCenter: true
+        });
+    </script>
 </body>
 </html>
