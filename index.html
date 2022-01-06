@@ -8,25 +8,43 @@
     <!-- google font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Zeyada&display=swap" rel="stylesheet">
     <title>DrikNet</title>
 </head>
 <body>
     <header>
         <nav>
-            <div>
-                <img src="./assets/img/logo.png" class="logo" alt="drik net logo">
+            <div class="topbar">
+                <div id="mobile-menu-bar" class="mobile-menu-bar">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div>
+                    <img src="./assets/img/logo.png" class="logo" alt="drik net logo">
+                </div>
+                <div class="social-media-icon">
+                    <div class="facebook-icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <div class="twitter-icon">
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    <div class="feed-icon">
+                        <i class="fas fa-rss"></i>
+                    </div>
+                </div>
             </div>
-            <div class="social-media-icon">
-                <div class="facebook-icon">
-                    <i class="fab fa-facebook-f"></i>
-                </div>
-                <div class="twitter-icon">
-                    <i class="fab fa-twitter"></i>
-                </div>
-                <div class="feed-icon">
-                    <i class="fas fa-rss"></i>
-                </div>
+            <div class="navs">
+                <ul>
+                    <li><a class="active" href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Depertments</a></li>
+                    <li><a href="#">Activitics</a></li>
+                    <li><a href="#">Inactivitics Project</a></li>
+                    <li><a href="#">Gallary Calendar</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Drik Trust</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
             </div>
         </nav>
         <div class="hero">
@@ -282,6 +300,13 @@
         </div>
         <div class="footer-location"></div>
     </footer>
+
+    <script>
+        document.getElementById('mobile-menu-bar').addEventListener('click', () => {
+            const menuBar = document.querySelector('.navs');
+            menuBar.classList.toggle('navsShow');
+        })
+    </script>
 
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/b98d090fd4.js" crossorigin="anonymous"></script>

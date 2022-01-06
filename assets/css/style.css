@@ -12,18 +12,17 @@ body{
 }
 
 /* header  */
-header{
-    background-image: url('../img/herobgimage.png');
-    background-position: right center;
-    background-size: cover;
-    background-color: rgba(0, 0, 0, 0.561);
-}
-nav{
+
+.topbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 5px 10px;
     background-color: #ffffff56;
+}
+
+.mobile-menu-bar{
+    display: none;
 }
 
 .logo{
@@ -35,25 +34,45 @@ nav{
     display: flex;
 }
 .social-media-icon > div{
-    margin-right: 15px;
-    padding: 7px 11px;
-    border: 2px solid black;
-    border-radius: 50%;
+    margin-right: 17px;
     font-size: 1.4rem;
     transition: all 0.3s ease-in-out;
 }
 .social-media-icon > div:hover{
-    color: #ffffff;
-    border: 1px solid #ffffff;
     cursor: pointer;
 }
+
+.navs ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navs ul > li{
+    padding: 5px 0px 6px 5px;
+    margin-right: 10px;
+}
+.navs ul > li > a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-family: Roboto;
+    color: #201e1e;
+}
+
+.navs ul > li > a .active{
+    color: #000000;
+}
+
 .hero{
     min-height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #0000003d;
+    background-image: url('../img/herobgimage.png');
+    background-position: right center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.561);
 }
 .hero > blockquote{
     width: 85%;
@@ -132,8 +151,9 @@ nav{
 
 .recent-news-section > h2{
     font-size: 4rem;
-    font-weight: bold;
+    font-weight: 400;
     text-align: center;
+    font-family: 'Zeyada', cursive;
 }
 .recent-news-section > h2::first-letter{
     color: #FF6584;
@@ -175,9 +195,10 @@ nav{
 }
 .depertment-section > h2{
     font-size: 4rem;
-    font-weight: bold;
+    font-weight: 400;
     text-align: center;
     color: #7B7B7B;
+    font-family: 'Zeyada', cursive;
 }
 .depertment-section > h2::first-letter{
     color: #FF6584;
@@ -226,8 +247,9 @@ nav{
 .news-network-section > h2{
     color: #ffffff;
     font-size: 4rem;
-    font-weight: bold;
+    font-weight: 400;
     text-align: center;
+    font-family: 'Zeyada', cursive;
 }
 .news-network-section > h2 > span{
     color: #FF6584;
@@ -301,9 +323,10 @@ nav{
 }
 .exhibition-section > h2{
     font-size: 4rem;
-    font-weight: bold;
+    font-weight: 400;
     text-align: center;
     color: #7B7B7B;
+    font-family: 'Zeyada', cursive;
 }
 .exhibition-section > h2::first-letter{
     color: #FF6584;
@@ -385,9 +408,10 @@ nav{
 }
 .initiatives-section > h2{
     font-size: 4rem;
-    font-weight: bold;
+    font-weight: 400;
     text-align: center;
     color: #7B7B7B;
+    font-family: 'Zeyada', cursive;
 }
 .initiatives-section > h2::first-letter{
     color: #FF6584;
@@ -432,9 +456,45 @@ footer{
         text-align: center;
     }
 
+    
+    .mobile-menu-bar{
+        display: block;
+        font-size: 1.5rem;
+        width: auto;
+        padding: 5px 10px;
+    }
+
+    .navs{
+        position: fixed;
+        right: -200px;
+        top: 0px;
+        height: 100vh;
+        width: 200px;
+        background-color: #ffffff;
+        overflow-y: scroll;
+        z-index: 999;
+        transition: right 0.3s ease-in-out;
+    }
+
+    .navsShow{
+        right: 0px;
+    }
+
+    .navs ul{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+
+    .navs ul > li:hover{
+        color: gray;
+    }
+
     .logo{
-        width: 156px;
-        height: 78px;
+        width: 70%;
+        height: auto;
+        margin-top: 10px;
     }
 
     .social-media-icon > div{
