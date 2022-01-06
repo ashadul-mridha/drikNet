@@ -8,7 +8,9 @@
     <!-- google font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Zeyada&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Ruluko&family=Zeyada&display=swap" rel="stylesheet">
+    <!-- slice slider -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <title>DrikNet</title>
 </head>
 <body>
@@ -35,7 +37,7 @@
             </div>
             <div class="navs">
                 <ul>
-                    <li><a class="active" href="#">Home</a></li>
+                    <li><a id="activeMenu" href="#">Home</a></li>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Depertments</a></li>
                     <li><a href="#">Activitics</a></li>
@@ -47,22 +49,57 @@
                 </ul>
             </div>
         </nav>
-        <div class="hero">
-            <blockquote>
-                <p>An insight into the evolution of one of the most significant movements in contemporary photography, through the eyes and voice of the man who shaped it. An extraordinary artist, Shahidul Alam is a photographer, writer, activist, and social entrepreneur who used his art to chronicle the social and artistic struggles in a country known largely for poverty and disasters.</p>
-            </blockquote>
-            <div class="hero-dot">
-                <div>
-                    <i class="fas fa-circle"></i>
-                </div>
-                <div>
-                    <i class="fas fa-circle"></i>
-                </div>
-                <div>
-                    <i class="fas fa-circle"></i>
-                </div>
+        <div class="heroslider">
+            <div class="hero">
+                <blockquote>
+                    <p>1 An insight into the evolution of one of the most significant movements in contemporary photography, through the eyes and voice of the man who shaped it. An extraordinary artist, Shahidul Alam is a photographer, writer, activist, and social entrepreneur who used his art to chronicle the social and artistic struggles in a country known largely for poverty and disasters.</p>
+                </blockquote>
+                <!-- <div class="hero-dot">
+                    <div>
+                        <i class="fas fa-circle"></i>
+                    </div>
+                    <div>
+                        <i class="fas fa-circle"></i>
+                    </div>
+                    <div>
+                        <i class="fas fa-circle"></i>
+                    </div>
+                </div> -->
+            </div>
+            <div class="hero">
+                <blockquote>
+                    <p>2 An insight into the evolution of one of the most significant movements in contemporary photography, through the eyes and voice of the man who shaped it. An extraordinary artist, Shahidul Alam is a photographer, writer, activist, and social entrepreneur who used his art to chronicle the social and artistic struggles in a country known largely for poverty and disasters.</p>
+                </blockquote>
+                <!-- <div class="hero-dot">
+                    <div>
+                        <i class="fas fa-circle"></i>
+                    </div>
+                    <div>
+                        <i class="fas fa-circle"></i>
+                    </div>
+                    <div>
+                        <i class="fas fa-circle"></i>
+                    </div>
+                </div> -->
+            </div>
+            <div class="hero">
+                <blockquote>
+                    <p>2 An insight into the evolution of one of the most significant movements in contemporary photography, through the eyes and voice of the man who shaped it. An extraordinary artist, Shahidul Alam is a photographer, writer, activist, and social entrepreneur who used his art to chronicle the social and artistic struggles in a country known largely for poverty and disasters.</p>
+                </blockquote>
+                <!-- <div class="hero-dot">
+                    <div>
+                        <i class="fas fa-circle"></i>
+                    </div>
+                    <div>
+                        <i class="fas fa-circle"></i>
+                    </div>
+                    <div>
+                        <i class="fas fa-circle"></i>
+                    </div>
+                </div> -->
             </div>
         </div>
+        
     </header>
     <!-- header end -->
     <main>
@@ -162,27 +199,27 @@
             <h2>Departments</h2>
             <div class="all-departments">
                 <div class="deparetment">
-                    <img src="./assets/img/d-1.svg" width="100%" alt="">
+                    <img src="./assets/img/d-1.svg" width="70%" alt="">
                     <h4>Audio Visual</h4>
                 </div>
                 <div class="deparetment">
-                    <img src="./assets/img/d-2.svg" width="100%" alt="">
+                    <img src="./assets/img/d-2.svg" width="70%" alt="">
                     <h4>Drik Images</h4>
                 </div>
                 <div class="deparetment">
-                    <img src="./assets/img/d-3.svg" width="100%" alt="">
+                    <img src="./assets/img/d-3.svg" width="70%" alt="">
                     <h4>Drik News</h4>
                 </div>
                 <div class="deparetment">
-                    <img src="./assets/img/d-4.svg" width="100%" alt="">
+                    <img src="./assets/img/d-4.svg" width="70%" alt="">
                     <h4>Gallery & Event</h4>
                 </div>
                 <div class="deparetment">
-                    <img src="./assets/img/d-5.svg" width="100%" alt="">
+                    <img src="./assets/img/d-5.svg" width="70%" alt="">
                     <h4>Photography</h4>
                 </div>
                 <div class="deparetment">
-                    <img src="./assets/img/d-6.svg" width="100%" alt="">
+                    <img src="./assets/img/d-6.svg" width="70%" alt="">
                     <h4>Publication</h4>
                 </div>
             </div>
@@ -221,15 +258,17 @@
                         <button> Live </button>
                     </div>
                     <div class="exhibition-location">
-                        <div class="exhibition-location-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="exhibition-location-content">
-                            <p>Time 5 pm Sunday January 3, 2016
-                                Venue Drik Gallery, Rooftop, 2nd floor
-                                Road 26, Dhanmondi, Dhaka
-                            </p>
-                        </div>
+                        <a href="#">
+                            <div class="exhibition-location-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="exhibition-location-content">
+                                <p>Time 5 pm Sunday January 3, 2016
+                                    Venue Drik Gallery, Rooftop, 2nd floor
+                                    Road 26, Dhanmondi, Dhaka
+                                </p>
+                            </div>
+                        </a>
                     </div>
                 </div>
 
@@ -239,14 +278,16 @@
                         <span>Upcoming</span>
                     </div>
                     <div class="exhibition-location">
-                        <div class="exhibition-location-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="exhibition-location-content">
-                            <p>Time 5 pm Sunday January 3, 2016
-                                Venue Drik Gallery, Rooftop, 2nd floor
-                                Road 26, Dhanmondi, Dhaka</p>
-                        </div>
+                        <a href="#">
+                            <div class="exhibition-location-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="exhibition-location-content">
+                                <p class="exhibition-location-content-small-p">Time 5 pm Sunday January 3, 2016
+                                    Venue Drik Gallery, Rooftop, 2nd floor
+                                    Road 26, Dhanmondi, Dhaka</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
 
@@ -261,6 +302,12 @@
         <section class="initiatives-section">
             <h2>Initiatives</h2>
             <div class="initiatives-images">
+                <div>
+                    <img src="./assets/img/initiative-1.svg" height="100%" width="100%" alt="">
+                </div>
+                <div>
+                    <img src="./assets/img/initiative-2.svg" height="100%" width="100%" alt="">
+                </div>
                 <div>
                     <img src="./assets/img/initiative-1.svg" height="100%" width="100%" alt="">
                 </div>
@@ -302,6 +349,7 @@
     </footer>
 
     <script>
+        // handle menu toggle
         document.getElementById('mobile-menu-bar').addEventListener('click', () => {
             const menuBar = document.querySelector('.navs');
             menuBar.classList.toggle('navsShow');
@@ -310,5 +358,57 @@
 
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/b98d090fd4.js" crossorigin="anonymous"></script>
+    <!-- slick slider  -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- slick slider  -->
+    <script type="text/javascript">
+        $(document).ready(function(){
+            //logo slider
+            $('.initiatives-images').slick({
+                arrows: false,
+                speed: 300,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                responsive: [
+                    {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                    },
+                    {
+                    breakpoint: 556,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                    }
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                ]
+            });
+            //hero slider
+            
+            $('.heroslider').slick({
+                infinite: true,
+                dots: true,
+                prevArrow: false,
+                nextArrow: false,
+                speed: 1000,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 4000
+            });
+
+        });
+      </script>
 </body>
 </html>
