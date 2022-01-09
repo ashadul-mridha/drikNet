@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="./assets/css/slick.css">
     <!-- Booklet plugin css  -->
     <link rel="stylesheet" href="./assets/css/jquery.booklet.latest.css">
+    <!-- book block  -->
+    <link rel="stylesheet" href="./assets/css/default.css">
+    <link rel="stylesheet" href="./assets/css/bookblock.css">
     <title>DrikNet</title>
 </head>
 <body>
@@ -387,10 +390,15 @@
     <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
     <script src="./assets/js/slick.min.js"></script>
     <!-- turnjs -->
-    <script src="./assets/js/turn.js"></script>
+    <!-- <script src="./assets/js/turn.js"></script> -->
     <!-- booklet flip  -->
     <script src="./assets/js/jquery.booklet.latest.min.js"></script>
     <script src="./assets/js/jquery-ui-1.10.4.min.js"></script>
+
+    <!-- bookblock js  -->
+    <script src="./assets/js/jquery.bookblock.js"></script>
+    <script src="./assets/js/jquery.bookblock.min.js"></script>
+    <script src="./assets/js/bookblock.min.js"></script>
 
     <!-- slick slider  -->
     <script type="text/javascript">
@@ -450,12 +458,13 @@
     <!-- booklet flip  -->
     <script>
         $(function() {
-            //single book
+           
             $('#flipbook').booklet({
                 width:  '100%',
-                height: 600
+                height: 600,
             });
         });
+        
     </script>
 </body>
 </html>
