@@ -453,7 +453,13 @@ ul.slick-dots {
 .calendar-wrapper{
     background-color: #29292B;
     padding: 10px 20px;
-    height: 60vh;
+}
+
+.calendar-year{
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px 10px;
 }
 
 /* initiatives start */
