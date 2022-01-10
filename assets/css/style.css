@@ -184,22 +184,22 @@ ul.slick-dots {
     grid-template-columns: repeat(2,1fr);
     margin-top: 70px;
 }
-.recent-news > article{
+.recent-news  article{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     
 }
-.recent-news > article > .img > img{
+.recent-news  article > .img > img{
     object-fit: cover;
 }
-.recent-news > article > .content > h5{
+.recent-news  article > .content > h5{
     color: #FF6584;
     font-size: 1.2rem;
     font-family: 'Roboto' , sans-serif;
     font-weight: bold;
     padding: 23px 5px 15px 5px;
 }
-.recent-news > article > .content > p{
+.recent-news  article > .content > p{
     color: #000000;
     font-size: 1.1rem;
     font-family: 'Roboto' , sans-serif;
@@ -429,7 +429,7 @@ ul.slick-dots {
 }
 
 .exhibition-location-content-small-p{
-    font-size: 1remphero;
+    font-size: 1rem;
 }
 
 /* exhibition end */
@@ -462,6 +462,14 @@ ul.slick-dots {
     grid-gap: 10px 10px;
 }
 
+
+.bb-custom-wrapper {
+    width: 100%;
+    position: relative;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
 /* initiatives start */
 .initiatives-section{
     margin: 50px 0px;
@@ -476,12 +484,15 @@ ul.slick-dots {
 .initiatives-section > h2::first-letter{
     color: #FF6584;
 }
-.initiatives-images{
+.initiatives-images > div{
+    margin-right: 20px;
+}
+/* .initiatives-images{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-column-gap: 30px;
     margin-top: 20px;
-}
+} */
 
 /* initiatives end */
 
@@ -737,3 +748,40 @@ footer{
     }
 
 }
+
+/* 
+.bb-custom-wrapper {
+    width: 100%;
+    position: relative;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+.bb-custom-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.bb-custom-wrapper .bb-bookblock {
+    width: 100%;
+    height: 600px;
+    box-shadow: 0 12px 20px -10px rgb(81 64 49 / 60%);
+}
+
+.bb-custom-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.fc-calendar-container {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    background: #fff;
+    overflow: hidden;
+} */
