@@ -45,6 +45,11 @@ body{
     cursor: pointer;
 }
 
+.navs {
+    background-color: #DAD8D9;
+    padding: 8px 0px;
+}
+
 .navs ul{
     list-style-type: none;
     display: flex;
@@ -59,11 +64,11 @@ body{
     text-decoration: none;
     font-size: 1.3rem;
     font-family: 'Ruluko', sans-serif;
-    color: #b5b5b8;
+    color: #020202;
 }
 
 a#activeMenu {
-    color: rgb(0, 0, 0);
+    color: rgb(251, 0, 0);
 }
 
 .hero{
@@ -167,7 +172,7 @@ ul.slick-dots {
     cursor: pointer;
 }
 
-.accodiant-details{
+/* .accodiant-details{
     width: 85%;
     margin: 0px auto;
     max-height: 0px;
@@ -182,7 +187,7 @@ ul.slick-dots {
     font-family: 'Roboto' , sans-serif;
     font-weight: 300;
     color: #000000;
-}
+} */
 
 /* main text section end */
 
